@@ -10,18 +10,18 @@ source:
   sha256: 5cb0eea0f254584241c519641328a4d4ec2001a86c3cd6d17a8fd228493f6d97
 
 build:
+  noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - setuptools_scm >=1.15
   run:
-    - python
+    - python >=3.6
     - more-itertools
-    - backports.functools_lru_cache >=1.0.3  # [py27]
 
 test:
   imports:
