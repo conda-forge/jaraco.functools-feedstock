@@ -1,5 +1,5 @@
 {% set name = "jaraco.functools" %}
-{% set version = "3.0.0" %}
+{% set version = "3.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5cb0eea0f254584241c519641328a4d4ec2001a86c3cd6d17a8fd228493f6d97
+  sha256: 9fedc4be3117512ca3e03e1b2ffa7a6a6ffa589bfb7d02bfb324e55d493b94f4
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -32,7 +32,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "Additional functools in the spirit of stdlib's functools."
+  summary: Additional functools in the spirit of stdlib's functools.
   doc_url: https://github.com/jaraco/jaraco.functools
   dev_url: https://github.com/jaraco/jaraco.functools
 
