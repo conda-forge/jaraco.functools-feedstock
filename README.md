@@ -5,11 +5,13 @@ Home: https://github.com/jaraco/jaraco.functools
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jaraco.functools-feedstock/blob/master/LICENSE.txt)
 
 Summary: Additional functools in the spirit of stdlib's functools.
 
+Development: https://github.com/jaraco/jaraco.functools
 
+Documentation: https://github.com/jaraco/jaraco.functools
 
 Current build status
 ====================
