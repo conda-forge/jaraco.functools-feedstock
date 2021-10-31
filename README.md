@@ -40,6 +40,7 @@ Installing `jaraco.functools` from the `conda-forge` channel can be achieved by 
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `jaraco.functools` can be installed with:
