@@ -1,5 +1,5 @@
 {% set name = "jaraco.functools" %}
-{% set version = "3.6.0" %}
+{% set version = "3.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2e1a3be11abaecee5f5ab8dd589638be8304cc4cb91361fe5e683f4b6d9fb7a3
+  sha256: 685dc06075696697edc9c4ef89af33f0fd2570a6ff57767332dbf4165e5ffbb3
 
 build:
   noarch: python
@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
     - setuptools_scm >=3.4.1
     - toml
   run:
-    - python >=3.7
+    - python >=3.8
     - more-itertools
 
 test:
