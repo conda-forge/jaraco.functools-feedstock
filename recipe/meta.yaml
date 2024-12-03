@@ -6,25 +6,27 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: c279cb24c93d694ef7270f970d499cab4d3813f4e08273f95398651a634f0925
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools_scm >=3.4.1
     - toml
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - more-itertools
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - jaraco.functools
 
