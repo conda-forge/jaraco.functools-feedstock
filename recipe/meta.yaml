@@ -1,5 +1,5 @@
 {% set name = "jaraco.functools" %}
-{% set version = "4.2.1" %}
+{% set version = "4.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jaraco_functools-{{ version }}.tar.gz
-  sha256: be634abfccabce56fa3053f8c7ebe37b682683a4ee7793670ced17bab0087353
+  sha256: cfd13ad0dd2c47a3600b439ef72d8615d482cedcff1632930d6f28924d92f294
 
 build:
   noarch: python
