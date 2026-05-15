@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: jaraco.functools
-  version: 4.4.0
+  version: "4.5.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/jaraco_functools-${{ version }}.tar.gz
-  sha256: da21933b0417b89515562656547a77b4931f98176eb173644c0d35032a33d6bb
+  sha256: 3bb5665ea4a020cf78a7040e89154c77edadb3ca74f366479669c5999aa70b03
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
 
